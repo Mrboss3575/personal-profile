@@ -1,1 +1,1 @@
-console.lod('hello world')
+console.log('hello world')
