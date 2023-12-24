@@ -1,0 +1,120 @@
+:root {
+  --dark-golden: #8a7800;
+  --dark-grey: #000000;
+  --light-grey: #666666;
+}
+
+p,
+h1 {
+  margin: 0;
+}
+
+a {
+  cursor: default;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  transition: 1s;
+}
+
+a:hover {
+  color: var(--dark-golden);
+  text-decoration: underline;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+.description {
+  width: 70%;
+  /* background-color: var(--light-grey); */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.description ul {
+  display: none;
+  flex-direction: column;
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  transition: 1s;
+}
+
+.title {
+  font-weight: bolder;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 50%;
+}
+
+.title:hover {
+  color: var(--dark-golden);
+}
+
+#topNav {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#topNav .navs {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+}
+
+#content {
+  height: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "about skills";
+}
+
+#content #about {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#content #about p {
+  font-size: 2.5rem;
+}
+
+#content #right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
